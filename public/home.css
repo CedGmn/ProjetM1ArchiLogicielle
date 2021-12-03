@@ -1,0 +1,44 @@
+﻿
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section main */
+
+.main {
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Toutes les cartes */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .cards .card {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+        .cards .card img {
+            width: 350px;
+        }
+
+        .cards .card .card-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .cards .card .card-body p {
+            margin-top: -10px;
+        }
+/* Fin de toutes les cartes */
+
+/* Fin de la section main */

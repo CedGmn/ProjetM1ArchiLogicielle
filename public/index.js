@@ -1,0 +1,1 @@
+﻿document.location.href = "http://manouvellepage.com";

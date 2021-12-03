@@ -1,0 +1,74 @@
+﻿
+
+.panier {
+    margin-top : 50px;  
+    margin-left: 450px;
+    border: 1px solid;
+    box-shadow: 0 6px 2px -2px gray;
+    width: 600px;
+    align-items : center;
+}
+.tm-tab-content{
+    margin : 15px;
+}
+
+.tm-list-item {
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    border: 1px solid;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    background: #C0C0C0;
+    box-shadow: 0 6px 2px -2px gray;
+}
+
+/*Item*/
+.tm-list-item-description {
+    display: flex;
+    margin-left : 3px;
+    align-content: center;
+}
+.tm-list-item-name {
+    margin-left: 10px;
+    display: flex;
+    align-content: center;
+}
+.tm-list-item-price {
+    margin-left: 3px;
+    display: flex;
+    align-content: end;
+}
+/*Item fin*/
+
+/*Item*/
+.tm-list-item-description {
+    display: flex;
+    margin-left: 3px;
+    align-content: center;
+}
+
+.tm-list-item-name {
+    margin-left: 10px;
+    display: flex;
+    align-content: center;
+}
+
+.tm-list-item-price {
+    margin-left: 3px;
+    display: flex;
+    align-content: end;
+}
+/*Item fin*/
+
+.table{
+    margin: 50px;
+}
+.total{
+    margin-left : 500px;
+    display : flex;
+    margin : 50px;
+}

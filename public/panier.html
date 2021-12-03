@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>La crème</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container bg-light rounded">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <p>Crème solaire pour langue comestible (12.00 €)</p>
+                        <img src="https://s2.qwant.com/thumbr/0x380/f/e/9b3bbf7459b27df335a5f9e35e88a2270a02f003307c4b74fc45f660ffbc7a/maxresdefault.jpg?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUrW8H_-krLg%2Fmaxresdefault.jpg&q=0&b=1&p=0&a=0" width="100" height="100">
+                    </div>
+
+                    <div class="col-md-8 text-end">
+                        <a style="cursor:pointer;" data-nom="Crème solaire pour langue comestible" data-prix="12.00" class="btn btn-primary ajouter-panier">ajouter au panier</a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <p>Crème qui vous rend beau(15.00 €)</p>
+                        <img src="https://www.levert.ma/wp-content/uploads/2016/08/Chameau-Maroc_.jpg" width="100" height="100">
+                    </div>
+
+                    <div class="col-md-8 text-end">
+                        <a style="cursor:pointer;" data-nom="Crème qui vous rend beau" data-prix="15.00" class="btn btn-primary ajouter-panier">ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <h4>Votre commande</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                Nombre de produit(s) dans le panier : <span class="total-count"></span>
+                <br /><br />
+                <table width="100%" class="show-panier" id="macommande"></table>
+                <br />
+                <br />
+                <div>*Prix total: <b><span class="total-panier" id="prix_total">0.00</span> euros</b></div>
+                <br />
+                <i id="livraison-detail">*Livraison incluse</i>
+                <div class="text-end"><button class="clear-panier btn btn-danger">Vider le panier</button></div>
+            </div>
+            <br>
+            <div class="text-end"><button type="button" class="btn btn-success" id="commander">Commander</button></div>
+            <br>
+        </div>
+
+        <div class="row">
+
+        </div>
+        <div class="modal" id="mymodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Commande confirmée</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="commande_report">Merci de votre commande</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="mymodal_erreur" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Erreur de commande</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="commande_report">Une erreur est survenue</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="panier.js"></script>
+    <script>
+        function commander(commande, prix_total {
+            $.ajax({
+                type: 'GET',
+                data: 'nom=' + nom + '&prenom=' + prenom + '&cp=' + cp + '&email=' + email + '&commande=' + commande + '&prix_total=' + prix_total + '&message=' + message + '&ville=' + ville,
+                dataType: 'html',
+                success: function (reponse) {
+                    if (reponse == "1") {
+                        MonPanier.clearpanier();
+                        afficherpanier();
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                        $('#mymodal').modal('show');
+                    }
+                    if (reponse == "0") { $('#mymodal_erreur').modal('show'); }
+                }
+            });
+            }
+        $('#commander').click(function () {
+            var commande = JSON.stringify(panier);
+            var prix_total = document.getElementById("prix_total").innerHTML;
+            var message = encodeURIComponent(document.getElementById("message").value);
+            commander( commande, prix_total);
+        });
+    </script>
+</body>
+</html>
